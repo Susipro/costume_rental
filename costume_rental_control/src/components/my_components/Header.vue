@@ -1,12 +1,20 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-  <div>
-    <h1><em>Rental of costumes and suits for events</em></h1>
+  <div class="header">
+    <h1>Customes Rental Asturias</h1>
   </div>
 </template>
 
-<style>
+<style scoped>
+.header {
+  background-color: beige;
+  color: black;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  border-bottom: 3px solid fuchsia;
+}
 </style>

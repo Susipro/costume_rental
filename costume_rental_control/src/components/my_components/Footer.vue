@@ -1,12 +1,20 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
   <div>
-    <h3><em>2022 Costumes and Suits For Events In Asturias</em></h3>
+    <h3 class="footer">Costumes and Suits For Events Rental In Asturias</h3>
   </div>
 </template>
 
-<style>
+<style scoped>
+.footer {
+  background-color: beige;
+  color: black;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid fuchsia;
+}
 </style>

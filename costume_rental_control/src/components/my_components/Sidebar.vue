@@ -3,14 +3,11 @@
 </script>
 
 <template>
-  <main>
-    
-
-    
-  </main>
+  <div>
+    Sidebar
+  </div>
 </template>
-
+{}
 <style scoped>
-
 
 </style>
