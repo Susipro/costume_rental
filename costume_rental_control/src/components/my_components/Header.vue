@@ -2,19 +2,19 @@
 
 <template>
   <div class="header">
-    <h1>Customes Rental Asturias</h1>
+    <h1>Rent Control</h1>
   </div>
 </template>
 
 <style scoped>
 .header {
-  background-color: beige;
-  color: black;
+  background-image: url(" https://cdn.pixabay.com/photo/2016/12/01/20/17/texture-1876097__480.jpg");
   width: 100%;
   height: 4rem;
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
   align-items: center;
   border-bottom: 3px solid fuchsia;
+  font-style: normal;
 }
 </style>

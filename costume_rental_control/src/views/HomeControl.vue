@@ -9,32 +9,34 @@ import Footer from "../components/my_components/Footer.vue";
     <Header />
     <body class="background">
       <main>
-        <h2 class="description">
-          "This App is used to control customes and suits for events in stocks
+        <div class="description">
+          <h2>"This App is used to control customes and suits for events in stocks
           and rented of your business"
-        </h2>
+          </h2>
+        </div>
+
         <div class="twocards">
           <div class="card">
-            <img
+            <figure> <img
               class="card-img-top"
-              src="https://cdn.pixabay.com/photo/2017/02/21/18/53/carnival-2087089_1280.png"
+              src="https://cdn.pixabay.com/photo/2017/10/28/21/19/man-2898152_1280.png"
               alt="Card image cap"
-            />
+            /></figure>
             <div class="card-body">
-              <button type="button" class="btn btn-warning">
+              <button type="button" class="costumes btn btn-lg btn-light btn-outline-dark ">
                 <RouterLink to="/customes">CUSTOMES</RouterLink>
               </button>
             </div>
           </div>
 
           <div class="card">
-            <img
+            <figure><img
               class="card-img-top"
-              src="https://cdn.pixabay.com/photo/2017/02/21/18/53/carnival-2087089_1280.png"
+              src="https://cdn.pixabay.com/photo/2017/10/28/21/19/man-2898152_1280.png"
               alt="Card image cap"
-            />
+            /></figure>
             <div class="card-body">
-              <button type="button" class="btn btn-warning">
+              <button type="button" class="suits btn btn-lg btn-light btn-outline-dark">
                 <RouterLink to="/suitsforevents">SUITS FOR EVENTS</RouterLink>
               </button>
             </div>
@@ -49,12 +51,17 @@ import Footer from "../components/my_components/Footer.vue";
 <style scoped>
 @media (min-width: 1024px) {
   
+  .background {
+    width: 100%;
+    height:auto;
+  }
+
   .description {
     text-align: center;
-    background-color:white;
-    color:rgb(21, 21, 145);
-    font-size: 1rem;
-    margin: 10%;
+    background-color:transparent;
+    font-style: italic;
+    color:rgb(190, 32, 169);
+    margin: 25px;
   }
   img.fluid {
     min-width: 100%;
@@ -62,30 +69,33 @@ import Footer from "../components/my_components/Footer.vue";
   }
   .twocards {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 1rem;
-    margin: 1rem;
+    justify-content: center;
+    align-items: space-around;
+    gap:10vw;
   }
 
   .card {
-    border: 1px solid black;
+    border: 1px solid blueviolet;
+    border-radius: 1rem;
     padding: 2rem;
     margin: 1rem;
-    background-color: wheat;
-    height: 25w;
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/01/20/17/texture-1876097_1280.jpg");
+    width: 23vw;
+    height:63vh;
   }
-  .card-img-top {
+   .card > figure{
     width: 100%;
-    height: 100%;
-    border: 1px solid fuchsia;
-  }
+    height: 80%;
+    overflow: hidden;
+    border: 2px solid fuchsia;
+    border-radius:1em;
+   }
   .background {
-    background-image: url("https://cdn.pixabay.com/photo/2021/12/11/01/55/wing-6861729_1280.jpg");
-    background-size: cover;
+    background-color: whitesmoke;
   }
   .card-body {
     text-align: center;
   }
+  
 }
 </style>
