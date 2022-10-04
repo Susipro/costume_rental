@@ -1,4 +1,15 @@
-# costume_rental_control
+# RENT CONTROL
+
+En una tienda de alquiler de disfraces necestitamos saber que tenemos alquilado y hasta cuando para saber cuando disponer de dicho árticulo.
+
+Este proyecto lo he realizado para que el gerente de una tienda pueda llevar un control de los stocks de disfraces y trajes para eventos.
+
+
+![]()
+
+
+
+
 
 This template should help get you started developing with Vue 3 in Vite.
 
