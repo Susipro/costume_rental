@@ -5,7 +5,8 @@ En una tienda de alquiler de disfraces necestitamos saber que tenemos alquilado 
 Este proyecto lo he realizado para que el gerente de una tienda pueda llevar un control de los stocks de disfraces y trajes para eventos.
 
 
-![]()
+![](https://github.com/Susipro/costume_rental/blob/develop/costume_rental_control/public/RentControl.jpg)
+![](https://github.com/Susipro/costume_rental/blob/develop/costume_rental_control/public/Costumes.jpg)
 
 
 
