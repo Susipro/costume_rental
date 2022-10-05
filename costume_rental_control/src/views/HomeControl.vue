@@ -7,12 +7,12 @@ import Footer from "../components/my_components/Footer.vue";
   
   <div class="homecontainer">
     <Header />
-    <body class="background">
+    <body class="backgroundhome">
       <main>
-        <div class="description">
-          <h2>"This App is used to control customes and suits for events in stocks
+        <div class="descriptionhome">
+          <h3>"This App is used to control Costumes and Suits for Events in stocks
           and rented of your business"
-          </h2>
+          </h3>
         </div>
 
         <div class="twocards">
@@ -23,8 +23,8 @@ import Footer from "../components/my_components/Footer.vue";
               alt="Card image cap"
             /></figure>
             <div class="card-body">
-              <button type="button" class="costumes btn btn-lg btn-light btn-outline-dark ">
-                <RouterLink to="/customes">CUSTOMES</RouterLink>
+              <button type="button" class="btn btn-lg btn-light btn-outline-dark ">
+                <RouterLink to="/costumes">COSTUMES</RouterLink>
               </button>
             </div>
           </div>
@@ -36,7 +36,7 @@ import Footer from "../components/my_components/Footer.vue";
               alt="Card image cap"
             /></figure>
             <div class="card-body">
-              <button type="button" class="suits btn btn-lg btn-light btn-outline-dark">
+              <button type="button" class=" btn btn-lg btn-light btn-outline-dark">
                 <RouterLink to="/suitsforevents">SUITS FOR EVENTS</RouterLink>
               </button>
             </div>
@@ -51,17 +51,19 @@ import Footer from "../components/my_components/Footer.vue";
 <style scoped>
 @media (min-width: 1024px) {
   
-  .background {
+  .backgroundhome {
     width: 100%;
     height:auto;
+    background-color: whitesmoke;
+    justify-content: center;
   }
 
-  .description {
+  .descriptionhome {
     text-align: center;
     background-color:transparent;
     font-style: italic;
     color:rgb(190, 32, 169);
-    margin: 25px;
+    margin-bottom: 25px;
   }
   img.fluid {
     min-width: 100%;
@@ -90,12 +92,19 @@ import Footer from "../components/my_components/Footer.vue";
     border: 2px solid fuchsia;
     border-radius:1em;
    }
-  .background {
-    background-color: whitesmoke;
-  }
   .card-body {
     text-align: center;
   }
-  
+  .btn {
+    background-color:whitesmoke;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:130%;
+    border: 2px solid black;
+  }
+  .btn:hover {
+    background-color: yellow;
+    color:white;
+  }
 }
 </style>
