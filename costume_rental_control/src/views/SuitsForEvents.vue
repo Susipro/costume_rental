@@ -8,8 +8,14 @@ import Footer from '../components/my_components/Footer.vue';
     <Header/>
     <body class="backgroundsuitsforevents">
       <main>
+        <div class="onlinesuitsforevents">
         <div class="descriptionsuitsforevents">
           <h3>SUITS FOR EVENTS</h3>
+        </div>
+        <div class="back">
+            <RouterLink to="/"><button type="button" class="backbtn btn btn-outline-warning">BACK</button>
+            </RouterLink>
+          </div>
         </div>
         <div class="twocards">
           <div class="card">
@@ -45,18 +51,39 @@ import Footer from '../components/my_components/Footer.vue';
 
 <style scoped>
   @media (min-width: 1024px) {
+    .suitsforeventscontainer{
+      width: 100%;
+      height:auto;
+    }
   .backgroundsuitsforevents {
     width: 100%;
     height:auto;
-    background-color: whitesmoke;
+    background-color: #f3e5e5;
     justify-content: center;
   }
   .descriptionsuitsforevents {
+   background-color:transparent;
+    padding:2% 6% 1% 6%;
+    border:4px #ffc107 dotted;
+    border-bottom-right-radius:  1rem;
+    border-top-left-radius: 1rem;
+    font-style: normal;
     text-align: center;
-    background-color:transparent;
-    font-style: italic;
+    background-color: #f5f5f5;
     color:rgb(190, 32, 169);
-    margin: 25px;
+    margin:0% 4% 2% 3%;
+  }
+  .descriptionsuitsforevents:hover {
+    color:rgb(6, 0, 0);
+  }
+  .backbtn {
+   margin-right: 1rem;
+  }
+  .onlinesuitsforevents{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:29%;
   }
   img.fluid {
     min-width: 100%;
@@ -91,16 +118,19 @@ import Footer from '../components/my_components/Footer.vue';
     text-align: center;
   }
   .btn {
-    background-color:whitesmoke;
-    color: black;
+    background: #f5f5f5;
+    color: #ffc107;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:130%;
-    border: 2px solid green;
+    font-size:120%;
+    border: 2px solid #ffc107;
   }
   .btn:hover {
-    background-color: fuchsia;
-    color:white;
+    background-color:fuchsia;
   }
+  .backbtn:hover {
+    background-color: #ffc107;
+    color:black;
+    }
 }
 </style>
 

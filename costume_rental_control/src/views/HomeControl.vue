@@ -54,7 +54,7 @@ import Footer from "../components/my_components/Footer.vue";
   .backgroundhome {
     width: 100%;
     height:auto;
-    background-color: whitesmoke;
+    background-color: #f3e5e5;
     justify-content: center;
   }
 
