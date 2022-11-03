@@ -8,6 +8,9 @@ import KidsCostumes from '../views/KidsCostumes.vue';
 import Suits from '../views/Suits.vue';
 import Dresses from '../views/Dresses.vue';
 import RentForm from '../views/RentForm.vue';
+import RentalList from '../views/RentalList.vue';
+import RentalListCostumes from '../views/RentalListCostumes.vue';
+import RentalListSuitsForEvents from '../views/RentalListSuitsForEvents.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,7 +21,7 @@ const router = createRouter({
       component: HomeControl,
         
     },
-      // component: () => import('../views/AboutView.vue')
+    // component: () => import('../views/AboutView.vue')
     {
       path: '/costumes',
       name: 'costumes',
@@ -49,10 +52,25 @@ const router = createRouter({
       name: 'dresses',
       component: Dresses,
     },
-     {
+    {
       path: '/rentform',
       name: 'rentform',
       component: RentForm,
+    },
+    {
+      path: '/rentallist',
+      name: 'rentallist',
+      component: RentalList,
+    },
+    {
+      path: '/rentallistcostumes',
+      name: 'rentallistcostumes',
+      component: RentalListCostumes,
+    },
+    {
+      path: '/rentallistsuits',
+      name: 'rentallistsuits',
+      component: RentalListSuitsForEvents,
     },
   ]
 })

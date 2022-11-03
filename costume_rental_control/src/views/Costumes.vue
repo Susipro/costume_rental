@@ -6,46 +6,46 @@ import Footer from '../components/my_components/Footer.vue';
 <template>
   <div class="costumescontainer">
     <Header/>
-    <body class="backgroundcostumes">
-      <main>
-        <div class="onlinecostumes">
-          <div class="descriptioncostumes">
-            <h3>COSTUMES</h3>
+      <body class="backgroundcostumes">
+        <main>
+          <div class="onlinecostumes">
+            <div class="descriptioncostumes">
+              <h3>COSTUMES</h3>
+            </div>
+              <div class="back">
+              <RouterLink to="/"><button type="button" class="backbtn btn btn-outline-warning">BACK</button>
+              </RouterLink>
+            </div>
           </div>
-            <div class="back">
-            <RouterLink to="/"><button type="button" class="backbtn btn btn-outline-warning">BACK</button>
-            </RouterLink>
-          </div>
-        </div>
 
-        <div class="twocards">
-          <div class="card">
-            <figure> <img
-              class="card-img-top"
-              src="https://cdn.pixabay.com/photo/2017/10/28/21/19/man-2898152_1280.png"
-              alt="Card image cap"/>
-            </figure>
-            <div class="card-body">
-              <button type="button" class="btn btn-lg btn-light btn-outline-dark ">
-                <RouterLink to="/adultcostumes">ADULT COSTUMES</RouterLink>
-              </button>
+          <div class="twocards">
+            <div class="card">
+              <figure> <img
+                class="card-img-top"
+                src="https://cdn.pixabay.com/photo/2017/10/28/21/19/man-2898152_1280.png"
+                alt="Card image cap"/>
+              </figure>
+              <div class="card-body">
+                <button type="button" class="btn btn-lg btn-light btn-outline-dark ">
+                  <RouterLink to="/adultcostumes">ADULT COSTUMES</RouterLink>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <figure><img
+                class="card-img-top"
+                src="https://cdn.pixabay.com/photo/2017/10/28/21/19/man-2898152_1280.png"
+                alt="Card image cap"/>
+              </figure>
+              <div class="card-body">
+                <button type="button" class="btn btn-lg btn-light btn-outline-dark">
+                  <RouterLink to="/kidscostumes">KIDS COSTUMES</RouterLink>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <figure><img
-              class="card-img-top"
-              src="https://cdn.pixabay.com/photo/2017/10/28/21/19/man-2898152_1280.png"
-              alt="Card image cap"/>
-            </figure>
-            <div class="card-body">
-              <button type="button" class="btn btn-lg btn-light btn-outline-dark">
-                <RouterLink to="/kidscostumes">KIDS COSTUMES</RouterLink>
-              </button>
-            </div>
-          </div>
-        </div>
-      </main>
-    </body>
+        </main>
+      </body>
     <Footer/>
   </div>
 </template>
